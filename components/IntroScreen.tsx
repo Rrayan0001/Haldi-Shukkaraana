@@ -147,7 +147,7 @@ export default function IntroScreen() {
     <section
       id="intro-screen"
       className={`i-wrap ${phase}`}
-      aria-label="Wedding invitation – tap to open"
+      aria-label="Haldi ceremony invitation – tap to open"
     >
       {/* damask bg */}
       <div className="intro-damask" aria-hidden="true" />
@@ -166,7 +166,7 @@ export default function IntroScreen() {
         role="button"
         tabIndex={0}
         onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") openInvitation(); }}
-        aria-label="Open wedding invitation"
+        aria-label="Open Haldi ceremony invitation"
       >
         {/* shine sweep */}
         <div className="i-shine" aria-hidden="true" />

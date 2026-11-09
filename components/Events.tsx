@@ -1,13 +1,15 @@
 import { wedding } from "@/lib/wedding";
 import { EventIcon, PinIcon } from "@/components/Ornaments";
+import HaldiGarland from "@/components/HaldiGarland";
+import HaldiUrli from "@/components/HaldiUrli";
 
 export default function Events() {
   return (
     <section className="wedding-section" id="itinerary-section">
       <div className="section-header">
-        <span className="section-subtitle">Celebration Moments</span>
+        <span className="section-subtitle">Haldi Celebrations</span>
         <div className="section-title-wipe">
-          <h2 className="section-title gold-foil">Wedding Itinerary</h2>
+          <h2 className="section-title gold-foil">Haldi Itinerary</h2>
         </div>
         <div className="section-divider-wrap">
           <svg viewBox="0 0 200 24" width="100%" height="100%" aria-hidden="true">
@@ -17,6 +19,9 @@ export default function Events() {
           <svg className="divider-center-sparkle" viewBox="0 0 24 24" fill="#c9a15b" aria-hidden="true"><use href="#sparkle-star" /></svg>
         </div>
       </div>
+
+      {/* Auspicious swaying Marigold & Mogra toran garland */}
+      <HaldiGarland />
 
       <div className="timeline-container" id="timeline-container">
         <div className="timeline-track-bg" aria-hidden="true"></div>
@@ -40,6 +45,10 @@ export default function Events() {
               <p className="event-venue-address">
                 {event.venueAddress.map((line) => (<span key={line}>{line}<br /></span>))}
               </p>
+
+              {/* Traditional Urli with floating petals & interactive Dua blessing */}
+              {event.kind === "haldi" && <HaldiUrli />}
+
               <div className="event-btn-wrap">
                 <a href={event.mapUrl} target="_blank" rel="noopener noreferrer" className="btn-directions">
                   <PinIcon />

@@ -1,6 +1,5 @@
 import IntroScreen from "@/components/IntroScreen";
 import Hero from "@/components/Hero";
-import SaveTheDate from "@/components/SaveTheDate";
 import Events from "@/components/Events";
 import Closing from "@/components/Closing";
 import Footer from "@/components/Footer";
@@ -28,7 +27,6 @@ export default function Home() {
 
       <main className="phone-viewport" id="main-invitation">
         <Hero />
-        <SaveTheDate />
         <Events />
         <Closing />
         <Footer />

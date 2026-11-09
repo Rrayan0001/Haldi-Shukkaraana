@@ -27,6 +27,35 @@ export function SharedSvgDefs() {
           <stop offset="55%" stopColor="#a87a00" />
           <stop offset="100%" stopColor="#5c3d00" />
         </linearGradient>
+        <linearGradient id="marigoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stopColor="#ffe082" />
+          <stop offset="45%" stopColor="#ffb300" />
+          <stop offset="80%" stopColor="#f57c00" />
+          <stop offset="100%" stopColor="#d84315" />
+        </linearGradient>
+        <radialGradient id="marigoldCenterGrad" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stopColor="#ffd54f" />
+          <stop offset="60%" stopColor="#ff8f00" />
+          <stop offset="100%" stopColor="#bf360c" />
+        </radialGradient>
+        <linearGradient id="mograWhiteGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stopColor="#ffffff" />
+          <stop offset="55%" stopColor="#fdf8ed" />
+          <stop offset="100%" stopColor="#ebd9c5" />
+        </linearGradient>
+        <radialGradient id="haldiPasteGrad" cx="35%" cy="30%" r="65%">
+          <stop offset="0%" stopColor="#fff59d" />
+          <stop offset="35%" stopColor="#fbc02d" />
+          <stop offset="75%" stopColor="#f57f17" />
+          <stop offset="100%" stopColor="#c65102" />
+        </radialGradient>
+        <linearGradient id="brassUrliGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stopColor="#cf9e46" />
+          <stop offset="25%" stopColor="#ffd875" />
+          <stop offset="50%" stopColor="#8c6d33" />
+          <stop offset="75%" stopColor="#ffd875" />
+          <stop offset="100%" stopColor="#5c4318" />
+        </linearGradient>
         <symbol id="sparkle-star" viewBox="0 0 24 24">
           <path d="M12 0 C13.5 8.5 15.5 10.5 24 12 C15.5 13.5 13.5 15.5 12 24 C10.5 15.5 8.5 13.5 0 12 C8.5 10.5 10.5 8.5 12 0 Z" />
         </symbol>

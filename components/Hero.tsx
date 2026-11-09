@@ -80,7 +80,7 @@ export default function Hero() {
             <p className="invite-line">WITH THE GRACE OF ALMIGHTY ALLAH</p>
             <p className="invite-line">AND THE BLESSINGS OF OUR FAMILIES,</p>
             <p className="invite-line">WE ARE DELIGHTED TO INVITE YOU TO</p>
-            <p className="invite-line">THE WEDDING CELEBRATIONS OF</p>
+            <p className="invite-line">THE HALDI &amp; SHUKRANA CELEBRATIONS OF</p>
           </div>
 
           <div className="couple-names-block">
@@ -103,7 +103,7 @@ export default function Hero() {
           </svg>
 
           <div className="hero-cta-box" id="hero-cta-box">
-            <a href="#save-the-date" className="btn-gold" id="explore-btn">
+            <a href="#itinerary-section" className="btn-gold" id="explore-btn">
               <StarSparkle />
               <span>EXPLORE DETAILS</span>
               <StarSparkle delay />

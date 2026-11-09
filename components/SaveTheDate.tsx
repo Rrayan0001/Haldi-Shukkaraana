@@ -128,12 +128,12 @@ export default function SaveTheDate() {
           <rect id="save-date-rect-stroke" x="3" y="3" width="364" height="174" rx="12" ry="12" fill="none" stroke="url(#goldMetallicGrad)" strokeWidth="2.2" />
           <rect x="9" y="9" width="352" height="162" rx="8" ry="8" fill="none" stroke="#c9a15b" strokeWidth="0.8" strokeOpacity="0.5" />
         </svg>
-        <p className="islamic-date-line">Haldi &amp; Shukrana &bull; Main Event</p>
+        <p className="islamic-date-line">Haldi &amp; Shukrana &bull; Ceremony</p>
         <div className="main-wedding-date" id="stagger-date-text" aria-label={wedding.mainDate}>{wedding.mainDate}</div>
         <p className="wedding-city-tag">{wedding.mainTimePlace}</p>
       </div>
 
-      <div className="countdown-grid" id="countdown-grid" aria-label="Countdown to wedding">
+      <div className="countdown-grid" id="countdown-grid" aria-label="Countdown to Haldi ceremony">
         <div className="countdown-box"><div className="digit-roller-window"><span className="digit-value" id="cd-days">00</span></div><div className="countdown-label">Days</div></div>
         <div className="countdown-box"><div className="digit-roller-window"><span className="digit-value" id="cd-hours">00</span></div><div className="countdown-label">Hours</div></div>
         <div className="countdown-box"><div className="digit-roller-window"><span className="digit-value" id="cd-mins">00</span></div><div className="countdown-label">Minutes</div></div>
