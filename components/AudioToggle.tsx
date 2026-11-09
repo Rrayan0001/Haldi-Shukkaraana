@@ -10,23 +10,32 @@ export default function AudioToggle() {
   const audio = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
+    const el = new Audio(wedding.musicPath);
+    el.preload = "auto";
+    el.loop = true;
+    el.volume = 0;
+    el.load();
+    audio.current = el;
     const start = () => {
-      if (audio.current) return;
-      try {
-        const el = new Audio(wedding.musicPath);
-        el.loop = true;
-        el.volume = 0;
-        audio.current = el;
-        el.play().then(() => {
-          setVisible(true);
-          gsap.to(el, { volume: 0.4, duration: 3.0, ease: "power1.inOut" });
-        }).catch(() => { setVisible(true); });
-      } catch { /* audio unavailable */ }
+      if (!audio.current) return;
+      if (!audio.current.paused) {
+        setVisible(true);
+        return;
+      }
+      audio.current.play().then(() => {
+        setVisible(true);
+        gsap.fromTo(el, { volume: 0.15 }, { volume: 0.4, duration: 1.0, ease: "power1.out" });
+      }).catch(() => {
+        setVisible(true);
+        gsap.to(el, { volume: 0.4, duration: 1.0, ease: "power1.out" });
+      });
     };
     window.addEventListener("music:start", start);
     return () => {
       window.removeEventListener("music:start", start);
-      audio.current?.pause();
+      gsap.killTweensOf(el);
+      el.pause();
+      el.src = "";
       audio.current = null;
     };
   }, []);

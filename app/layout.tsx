@@ -67,6 +67,7 @@ export default function RootLayout({
       className={`${cinzel.variable} ${cormorant.variable} ${greatVibes.variable} ${amiri.variable}`}
     >
       <body className="locked" suppressHydrationWarning>
+        <link rel="preload" href="/assets/music.mp3" as="audio" type="audio/mpeg" fetchPriority="low" />
         <script
           dangerouslySetInnerHTML={{
             __html: "document.documentElement.classList.add('js');",
